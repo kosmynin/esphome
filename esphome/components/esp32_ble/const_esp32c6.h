@@ -7,7 +7,7 @@
 namespace esphome {
 namespace esp32_ble {
 
-static const esp_bt_controller_config_t BT_CONTROLLER_CONFIG = {
+const esp_bt_controller_config_t BT_CONTROLLER_CONFIG = {
     .config_version = CONFIG_VERSION,
     .ble_ll_resolv_list_size = CONFIG_BT_LE_LL_RESOLV_LIST_SIZE,
     .ble_hci_evt_hi_buf_count = DEFAULT_BT_LE_HCI_EVT_HI_BUF_COUNT,
