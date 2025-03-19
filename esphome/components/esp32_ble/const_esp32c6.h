@@ -40,10 +40,10 @@ static const esp_bt_controller_config_t BT_CONTROLLER_CONFIG = {
     .controller_run_cpu = 0,
     .enable_qa_test = RUN_QA_TEST,
     .enable_bqb_test = RUN_BQB_TEST,
+    .enable_uart_hci = HCI_UART_EN,
 #if ESP_IDF_VERSION < ESP_IDF_VERSION_VAL(5, 3, 1)
     // The following fields have been removed since ESP IDF version 5.3.1, see commit:
     // https://github.com/espressif/esp-idf/commit/e761c1de8f9c0777829d597b4d5a33bb070a30a8
-    .enable_uart_hci = HCI_UART_EN,
     .ble_hci_uart_port = DEFAULT_BT_LE_HCI_UART_PORT,
     .ble_hci_uart_baud = DEFAULT_BT_LE_HCI_UART_BAUD,
     .ble_hci_uart_data_bits = DEFAULT_BT_LE_HCI_UART_DATA_BITS,
